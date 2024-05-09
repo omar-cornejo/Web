@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <title>omar-cornejo</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/footer.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Preconexión para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuente Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -24,6 +38,11 @@
         
     </header>
     <section id="home">
+        <div class="redes_sociales">
+            <div class="redes_sociales_svbar">
+                <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+            </div>
+        </div>
         <div class="intro">
             <h1 class="intro_titulo">HI,I'M OMAR CORNEJO</h1>
             <div class="intro_texto"">
@@ -33,25 +52,27 @@
                 <a>Projects</a>
             </div>
         </div>
-        <div class="redes_sociales">
-            <div class="redes_sociales_svbar">
-                <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
-            </div>
-        </div>
+        
     </section>
     <section id="about">
         <div class="about_informacion">
             <h1 class="about_informacion_titulo">About me</h1>
             <div class="about_informacion_titulo_texto"">
-                <p>Here you will find more information about me,<br>what I do, and my current skills mostly in terms of programming and technology </p>
+                <p>
+                    This is where you can learn more about me, my work, and my current skill set, particularly in programming and technology. 
+                </p>
             </div>
         </div>
         <div class="about_contenido">
             <div class="about about_contenido_izquierda">
-                <h3>Get me know me</h3>
+                <h3 class="about_contenido_titulo">Get me know me</h3>
                 <div class="about_contenido_izquierda_texto">
-                    <p>Insertar texto </p>
-                    <p>Insertar texto </p>
+                    <p>
+                        As a <strong>Computer Engineering</strong> student at FIB, I'm highly interested in the field of <strong>Information Technology (IT)</strong> and I'm currently engaged in personal projects to expand my practical skills.
+                    </p>
+                    <p>
+                        I'm open to new <strong>job</strong> opportunities where I can learn more and grow as a professional. If you have a position that matches my skills and experience, I'd love to hear more about it. Please feel free to reach out to discuss how I can contribute to your team or project. 
+                    </p>
 
                 </div>
                 <div class="about_contenido_izquierda_boton">
@@ -60,7 +81,7 @@
                 
             </div>
             <div class="about_contenido_derecha">
-                <h3>My skills</h3>
+                <h3 class="about_contenido_titulo">My skills</h3>
                 <div class="about_contenido_derecha_habilidades">
                     <div class="about_contenido_derecha_habilidad">HTML</div>
                     <div class="about_contenido_derecha_habilidad">PHP</div>
@@ -74,7 +95,66 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="contact_container">
+            <h2 class="contact_container_cabezera">
+                <span class="contact_container_cabezera_titulo">
+                    Contact
+                </span>
+                <span class="contact_container_cabezera_texto">
+                    You're welcome to get in touch with me by filling out the form below. I'll respond to you as quickly as I can.
+                </span>
 
+            </h2>
+            <div class="contact_container_contacto">
+                <form class="container_contacto_formulario" method="post">
+                    <div class="container_contacto_formulario_container">
+                        <label class="contacto_formulario_label">Name</label>
+                        <input id="name" class="contacto_formulario_input" required="" placeholder="Enter Your Name" type="text" name="name">
+                    </div>
+                    <div class="container_contacto_formulario_container">
+                        <label class="contacto_formulario_label">Email</label>
+                        <input id="email" class="contacto_formulario_input" required="" placeholder="Enter Your Email" type="text" name="email">
+                    </div>                
+                    <div class="container_contacto_formulario_container">
+                        <label class="contacto_formulario_label">Message</label>
+                        <textarea id="message" class="contacto_formulario_input" required="" cols="30" rows="10" placeholder="Enter Your Message" name="message"></textarea>
+                    </div>
+                    <button class="contacto_formulario_boton">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer_container">
+            <!-- shout out to https://www.rammaheshwari.com/ -->
+            <div class="footer_container_arriba">
+                
+                <div class="footer_container_arriba_social">
+                    <span>Social</span>
+                    <div class="footer_container_arriba_social_logos">
+                        <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+                    </div>
+                </div>
+                <div class="footer_container_arriba_info">
+                    <h2>Omar Antonio Cornejo Vargas</h2>
+                    <p>
+                        Computer Engineering student
+                    </p>
+                </div>
+                
+            </div>
+            <div class="footer_container_abajo">
+                © Copyright
+                2024 . Made by
+                <a>Omar A. Cornejo</a>
+            </div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

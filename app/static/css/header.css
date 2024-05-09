@@ -1,0 +1,46 @@
+
+.header_content {
+    background-color: rgb(86, 90, 88);
+    display: flex; /* Convertir a flexbox */
+    justify-content: space-between; /* Separar los elementos al máximo */
+    align-items: center; /* Alinear verticalmente en el centro */
+}
+
+.header_logo-name{
+    padding-left: 10px;
+}
+
+/* Estilo para el logo y el contenedor del logo */
+.header_logo-container {
+    padding: 10;
+    display: flex; /* Para alinear el logo y el nombre del logo */
+    align-items: center; /* Alinear verticalmente */
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    margin: 10px;
+    display: flex; /* Para alinear enlaces horizontalmente */
+    border: 1px solid black;
+}
+
+/* Estilo para enlaces dentro de la barra de navegación */
+.navbar a {
+    text-decoration: none; /* Sin subrayado */
+    padding: 18px; /* Espaciado interno */
+    color: #333; /* Color de texto */
+    border: 1px solid   black;
+}
+
+.navbar a:hover {
+    color: #7b7070; /* Cambio de color al pasar el mouse */
+}
+
+.header_content {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #000;
+    background: #fff;
+    box-shadow: 0 10px 100px rgba(0,0,0,0.1);
+}

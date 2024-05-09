@@ -8,6 +8,7 @@
 
 .header_logo-name{
     padding-left: 10px;
+    margin-left: 3vh;
 }
 
 /* Estilo para el logo y el contenedor del logo */
@@ -15,21 +16,22 @@
     padding: 10;
     display: flex; /* Para alinear el logo y el nombre del logo */
     align-items: center; /* Alinear verticalmente */
+
 }
 
 /* Estilo para la barra de navegación */
 .navbar {
-    margin: 10px;
+    margin: 1vh;
     display: flex; /* Para alinear enlaces horizontalmente */
-    border: 1px solid black;
+    margin-right: 3vh;
 }
 
 /* Estilo para enlaces dentro de la barra de navegación */
 .navbar a {
     text-decoration: none; /* Sin subrayado */
-    padding: 18px; /* Espaciado interno */
+    padding: 4vh; /* Espaciado interno */
     color: #333; /* Color de texto */
-    border: 1px solid   black;
+
 }
 
 .navbar a:hover {
@@ -37,6 +39,7 @@
 }
 
 .header_content {
+    font-size: 2vh;
     position: fixed;
     width: 100%;
     z-index: 1000;

@@ -20,23 +20,32 @@
 
 }
 
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Mover hacia arriba */
+    100% { transform: translateY(0); }
+}
 
+.intro_boton a {
+    text-decoration: none !important;
+    color: white !important; 
+}
 
 .intro_boton {
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none;
     color: white;
     background-color: #007bff; /* Color azul para el botón */
     padding: 1vh; /* Padding para hacer el botón más grande */
     border-radius: 1vh;
-    transition: background-color 0.3s; /* Efecto al pasar el mouse */
+    transition: all 0.7s ease; /* Transición para todas las propiedades con una duración de 0.5 segundos */
     width: 20%;
     display: inline-block; /* Para mantener el botón como un elemento en línea */
     margin-top: 1vh; /* Espacio entre el texto y el botón */
     font-size: 2rem;
 }
 
-.intro_boton a:hover {
-    background-color: #b35f00; /* Color al pasar el mouse */
+.intro_boton:hover {
+    animation: bounce 0.7s;
 }
 
 

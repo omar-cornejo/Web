@@ -5,18 +5,24 @@
   font-size: 1.6rem;
   background: #7843E9;
   color: #fff;
+  border-radius: 3vh;
 }
 
 .contacto_formulario_input {
     color: #333;
     padding: 2rem;
-    width: 94%;
+    width: 80%;
+    height: 20%;
     border: 1px solid #ebebeb;
     font-size: 1.6rem;
     letter-spacing: 0px;
     background: #f0f0f0;
     border-radius: 5px;
     font-weight: 600;
+    text-align: left;
+    max-width: 90%; /* Establecer el tamaño máximo para el crecimiento */
+    max-height: 30%;
+    overflow-y: auto;  /* Mostrar barra de desplazamiento vertical cuando el contenido supera el tamaño máximo */
 }
 
 .contacto_formulario_label {
@@ -31,6 +37,7 @@
 
 .container_contacto_formulario_container {
     margin-bottom: 2rem;
+    
 }
 
 .container_contacto_formulario {
@@ -46,7 +53,6 @@
     background: white;
     padding: 3rem;
     max-width: 80rem;
-    text-align: right;
     width: 95%;
     border-radius: 5px;
     margin-top: 2rem

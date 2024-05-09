@@ -10,6 +10,10 @@
     color: #666;
 }
 
+.about_contenido_derecha_habilidad:hover{
+    background-color: #acaaaa;; /* Cambia el color al hacer hover */
+}
+
 .about_contenido_derecha_habilidades{
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +28,16 @@
 }
 
 
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Mover hacia arriba */
+    100% { transform: translateY(0); }
+}
+
+.about_contenido_izquierda_boton a{
+    text-decoration: none !important;
+    color: white !important; 
+}
 
 .about_contenido_izquierda_boton {
     text-decoration: none;
@@ -31,12 +45,16 @@
     background-color: #007bff;
     padding: 1vh;
     border-radius: 1vh;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
     width: 20%;
     display: inline-block;
     margin-top: 1vh;
     font-size: 1.8rem;
     text-align: center;
+}
+
+.about_contenido_izquierda_boton:hover{
+    animation: bounce 0.7s;
 }
 
 .about_contenido_izquierda_texto p {

@@ -31,7 +31,7 @@
             <div class="navbar">
                 <a href="#home">HOME</a>
                 <a href="#about">ABOUT</a>
-                <a href="#services">PROJECTS</a>
+                <a href="https://github.com/omar-cornejo">PROJECTS</a>
                 <a href="#contact">CONTACT</a>
             </div>
         </div>
@@ -40,7 +40,9 @@
     <section id="home">
         <div class="redes_sociales">
             <div class="redes_sociales_svbar">
-                <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+                <a href="https://github.com/omar-cornejo">  <!-- Enlace directo, sin usar url_for -->
+                    <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+                </a>
             </div>
         </div>
         <div class="intro">
@@ -49,7 +51,7 @@
                 <p>Computer engineering student at FIB</p>
             </div>
             <div class="intro_boton">
-                <a>Projects</a>
+                <a href="https://github.com/omar-cornejo">Projects</a>
             </div>
         </div>
         
@@ -76,7 +78,7 @@
 
                 </div>
                 <div class="about_contenido_izquierda_boton">
-                    <a>Contact</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 
             </div>
@@ -98,34 +100,29 @@
     <section id="contact">
         <div class="contact_container">
             <h2 class="contact_container_cabezera">
-                <span class="contact_container_cabezera_titulo">
-                    Contact
-                </span>
+                <span class="contact_container_cabezera_titulo">Contact</span>
                 <span class="contact_container_cabezera_texto">
                     You're welcome to get in touch with me by filling out the form below. I'll respond to you as quickly as I can.
                 </span>
-
             </h2>
             <div class="contact_container_contacto">
-                <form class="container_contacto_formulario" method="post">
+                <form class="container_contacto_formulario" method="post" action="/submit"> <!-- Cambiar acción a /submit -->
                     <div class="container_contacto_formulario_container">
                         <label class="contacto_formulario_label">Name</label>
-                        <input id="name" class="contacto_formulario_input" required="" placeholder="Enter Your Name" type="text" name="name">
+                        <input id="name" class="contacto_formulario_input" required placeholder="Enter Your Name" type="text" name="name">
                     </div>
                     <div class="container_contacto_formulario_container">
                         <label class="contacto_formulario_label">Email</label>
-                        <input id="email" class="contacto_formulario_input" required="" placeholder="Enter Your Email" type="text" name="email">
-                    </div>                
+                        <input id="email" class="contacto_formulario_input" required placeholder="Enter Your Email" type="email" name="email"> <!-- Usar "email" como tipo -->
+                    </div>
                     <div class="container_contacto_formulario_container">
                         <label class="contacto_formulario_label">Message</label>
-                        <textarea id="message" class="contacto_formulario_input" required="" cols="30" rows="10" placeholder="Enter Your Message" name="message"></textarea>
+                        <textarea id="message" class="contacto_formulario_input" required cols="30" rows="10" placeholder="Enter Your Message" name="message"></textarea>
                     </div>
-                    <button class="contacto_formulario_boton">Submit</button>
+                    <button class="contacto_formulario_boton" type="submit">Submit</button> <!-- Botón para enviar -->
                 </form>
-
             </div>
         </div>
-
     </section>
     <footer class="footer">
         <div class="footer_container">
@@ -135,7 +132,9 @@
                 <div class="footer_container_arriba_social">
                     <span>Social</span>
                     <div class="footer_container_arriba_social_logos">
-                        <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+                        <a href="https://github.com/omar-cornejo">  <!-- Enlace directo, sin usar url_for -->
+                            <img src="{{ url_for('static', filename='images/25231.png') }}" alt="github">
+                        </a>
                     </div>
                 </div>
                 <div class="footer_container_arriba_info">
